@@ -12,7 +12,7 @@ header h1{
     font-size: 30px;
 }
 
-header section{
+header h2{
     text-align: center;
 }
 
@@ -23,7 +23,7 @@ nav ul{
 
 nav ul li{
     float:left;
-    margin-left: 300px;
+    margin-left: 15%;
 
 }
 
@@ -31,6 +31,7 @@ nav ul li a{
     background-color: #A1A7B5;
     color:white;
     text-decoration: none;
+    font-size: 20px;
 }
 #Campus_exp{
     text-align: left;
@@ -59,8 +60,10 @@ h4{
     height:200px;
     background-image: url("https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1524658191&di=f01e59216cb83950c0c40856cf32229b&src=http://p3.gexing.com/shaitu/20120905/1726/50471ab66f360.jpg");
     background-repeat: no-repeat;
-    background-size: 130px 200px
+    background-size: 130px,200px;
+    position:relative;
+
 }
-#introduce h3{
-    margin-top:21px;
+#introduce{
+ margin-top: 30px;
 }
