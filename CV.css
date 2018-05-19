@@ -64,6 +64,11 @@ h4{
     position:relative;
 
 }
+<<<<<<< HEAD
 #introduce{
  margin-top: 30px;
+=======
+#introduce h3{
+    margin-top:25px;
+>>>>>>> 96df6fb384b67400281ea32260c3f5ffb31c2141
 }
