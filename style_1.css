@@ -1,0 +1,10 @@
+body{
+
+}
+table{
+    border-collapse:separate;
+}
+
+table tr th{
+    float:left;
+}
