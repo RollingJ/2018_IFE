@@ -1,0 +1,181 @@
+html{
+    width:100%;
+    height: 100%;
+}
+body{
+    width:100%;
+    height: 100%;
+
+}
+header{
+    background-color: #3d444c;
+    width:100%;
+    height:15%;
+}
+header #lgandnav{
+    width:960px;
+    margin: 0 auto;
+    position:relative;
+}
+header #lgandnav ul{
+     list-style-type: none;
+    position: relative;
+    top: 5px;
+
+}
+header #lgandnav ul li {
+    float:right;
+    display: inline-block;
+    margin-right: 20px;
+
+}
+header #lgandnav ul li a{
+     color:white;
+
+
+}
+
+header #lgandnav #logo{
+    float:left;
+    color:white;
+    font-size:30px;
+
+}
+
+/*
+banner css
+*/
+
+#banner{
+    height:30%;
+    background-color:#5fbe32;
+    position: relative;
+}
+
+/*为类设置绝对定位会重叠在一起*/
+#banner .carousel{
+    float:right;
+    width:20px;
+    height:26px;
+    border:solid black 0.5px;
+    background-color:rgba(220,220,220,0.8);
+    text-align: center;
+    margin-top: 200px;
+    margin-right:3px;
+
+}
+#banner #ca_wrap{
+    margin-right: 15%;
+    height:50px;
+    position: relative;
+}
+
+#banner .carousel:hover{
+    margin-right:6px;
+    margin-left: 6px;
+    background-color: rgba(220,220,220,1);
+    /*animation: myfirst 30s;*/
+    width: 26px;
+    height:35px;;
+    margin-top: 191px;
+
+}
+
+#banner .carousel div{
+   height: 100%;
+ ;
+}
+#banner .carousel div:hover{       /*轮播图按钮用一个div包裹数字，这里有个bug，我设置的当轮播图hoverbox要变大，使用的margin相对向上延伸，如果点中的是数字，将会把数字相对降到底部，如果鼠标点中外框增大的和内框交接的地方会出现闪烁*/
+    margin-top:10px;
+    height: 100%;
+}
+/*@keyframes  myfirst {
+   from{width:20px;height:26px;}
+    to{width:25px;height: 35px;}
+}
+@-moz-keyframes  myfirst {
+    from{width:20px;height:26px;}
+    to{width:25px;height: 35px;}
+}
+
+@-webkit-keyframes  myfirst {
+    from{width:20px;height:26px;}
+    to{width:25px;height: 35px;}
+}*/
+
+hr{
+    margin-top: 2px;
+    height:1px;
+    border:none;
+    background-color: rgba(136, 136, 136,0.4);
+    clear:both;
+
+}
+#nav{
+    width:960px;
+    height:45px;
+}
+#nav ul{
+    list-style-type: none;
+    height: 45px;
+    margin-left: 40%;
+
+}
+#nav ul li{
+
+    width: 100px;
+    height:45px;
+    float:left;
+   border:1px solid #b5b5b5;
+    border-bottom-color: transparent;
+    border-top-left-radius:17px;
+    border-top-right-radius: 17px;
+    background-color: #e1e1e1;
+
+}
+#nav ul li a{
+    text-decoration: none;
+    color: black;
+    width:100%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+ #nav ul li.active{         /*无法清除选项卡下边缘*/
+     background-color: white;
+ }
+
+ /*flex-box*/
+#content{
+    margin: 0 auto;
+    width:960px;
+    display: flex;
+    flex-flow: row wrap;
+;
+}
+#content div{
+    text-align: center;
+}
+
+
+#content .box{
+    border:1px #b5b5b5 solid;
+    padding:80px;
+    margin:5px;
+    flex:1;
+}
+#content #center{
+  display:flex;
+}
+
+footer{
+    background-color: #3d444c;
+    height: 10%;
+}
+footer p{
+    color: white;
+    text-align: center;
+   padding-top: 1%;
+}
