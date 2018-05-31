@@ -3,45 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="layout1.css">
 </head>
 <body>
 <header>
     <h1>Hello World</h1>
-    <pre>China is speeding up strategic plan,standards,traffic rules,laws and regulations
-          on accident-incurred liabilities for its smart car industry.Economic Information
-                                      Daily reported Thursday.</pre>
+    <p>China is speeding up strategic plan,standards,traffic rules,laws and regulations on accident-incurred liabilities for its smart car industry.Economic Information Daily reported Thursday.</p>
     <div id="register">
         <h2>CREATE YOUR ACCOUNT</h2>
         <p>IT IS ABSOLUTELY FREE</p>
-        <input type="text" value="denis@getcraftwork.com" name="account">
-        <input type="password" name="password" placeholder="Create your password">
-        <input type="submit" value="SIGN UP">
+        <input type="text" value="    denis@getcraftwork.com" id="account">
+        <input type="password" name="password" placeholder="    Create your password" id="pw">
+        <input type="submit" value="SIGN UP" id="submit">
     </div>
 </header>
 <section id="feature">
     <p>BOTELOADS OF AWESOME</p>
     <h1>Ready-made,customizable,HTML landing pages sections</h1>
+    <div id="characterwrap">
     <div id="mobile">
+        <img src="images/phone.png" alt="phone">      <!--原本使用li的list-style-image设置小图标，后来发现小图标在一个文档中多次定义会失效，遂摒弃采用Img-->
         <h2>Mobile First</h2>
-        <p>All module are built mobile-first for maximum device compatibility.</p></div>
+        <p>All module are built mobile-first for maximum device compatibility.</p>
+    </div>
     <div id="accessibility">
+        <img src="images/check.png" alt="check">
         <h2>Accessibility</h2>
         <p>Support for IE8,mobile and tablet devices,screenreaders and color blind</p>
     </div>
     <div id="fluid">
+        <img src="images/pencil.png" alt="pencil">
         <h2>Fluid Typography</h2>
         <p>On different screen sizes,fonts automagically scale with the viewport.</p>
     </div>
     <div id="customization">
+        <img src="images/setting.png" alt="setting">
         <h2>Customization</h2>
         <p>Make any design your own using the Style Editor.Personalize fonts,colors,and layout to create the custom look you want.</p>
     </div>
+    </div>
 </section>
 <section id="background2">
+    <div id="bg2wrap">
     <h1>Supportive policies for China's smart car</h1>
     <p>China will come up with its own smart car standars,traffic rules,laws and regulations relating to safety.according to the China Industry Innovation Alliance for the Intelligent and Connected Vehicles.</p>
     <input type="button" value="CHECK OUT FEATURES">
     <input type="button" value="TRY PRODUCT FOR FREE">
+    </div>
 </section>
     <section id="product">
         <h1>Try Our Awesome Products</h1>
@@ -49,7 +57,96 @@
             <img src="images/Singleton.png" alt="Singleton">
             <article>
                 <p>Li Jun,a China Academy of Engineering academician and also director of the alliance's experts' committee,said that China will also launch design guidance for smart cars,smart map architecture and standards for test grounds</p>
-            </article></div>
+            </article>
+        </div>
+        <div id="hero">
+            <img src="images/Hero.png" alt="hero">
+            <article>
+                <p>Li said the smart car industry is able to enlarge the current car industry by 1 trillion yuan ($158.15 billion) and also able to boost fast development in 5G,internet of cars,big data,artificial intelligence and new-energy vehicles.</p>
+            </article>
+        </div>
+        <div id="portland">
+            <img src="images/Portland.png" alt="portland">0
+            <article>
+                <p>Zhang Junyi,a partner with NIO Capital,said that the smart car is the trend for the car industry and China's auto sector will usher in a new key development stage with the improvement of infrastructure,technology,policies and laws.</p>
+            </article>
+        </div>
     </section>
+<hr/>
+<section id="repeat">
+    <div id="leaf">
+        <img src="images/leaf.png" alt="leaf">
+        <h1>Learn How to Improve your Personal Business</h1>
+        <p>Li Jun,a China Academy of Engineering academician and also director of the alliance's experts' committee,said that China will also launch design guidance for smart cars,smart map architecture and standards for test grounds</p>
+    </div>
+    <div id="bird">
+        <img src="images/bird.png" alt="bird">
+        <h1>Choose Between Two Beautifully Designed Color Schemes.</h1>
+        <p>China will come up with its own smart car standars,traffic rules,laws and regulations relating to safety.according to the China Industry Innovation Alliance for the Intelligent and Connected Vehicles.</p>
+    </div>
+</section>
+<hr/>
+<section id="crew">
+    <h1>Our Awesome Crew</h1>
+    <p>Our unique online teaching style makes learning easy for everyone.Whether your are trying to land a new job,brush up on your skills.</p>
+    <div id="imgwrap">
+        <img src="images/person1.png" alt="person1">
+        <img src="images/person2.png" alt="person2">
+        <img src="images/person3.png" alt="person3">
+        <img src="images/person4.png" alt="person4">
+    </div>
+</section>
+<hr/>
+<section>
+    <div id="emailwrap">
+        <h1>FELL FREE TO WRITE US</h1>
+        <input type="email" name="email" placeholder="E-mail">
+        <input type="text" name="Subject" placeholder="Subject">
+        <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+        <input type="button" value="SEND">
+    </div>
+    <h1>Contacts</h1>
+    <p>Make any design your own using the Style Editor.Personalize fonts,colors,and layout to create the custom look you want.</p>
+    <ul>
+        <li style="list-style-image: url(images/location.png)">360 King Street<br>Feastrvale Trevose,PA 19057</li>
+        <li style="list-style-image: url(images/telephone.png)">(755)564-84-12</li>
+        <li style="list-style-image: url(images/mail.png)">youname@mail.com</li>
+    </ul>
+</section>
+<footer>
+    <ul id="learn">
+        <li>LEARN MORE</li>
+        <li><a href="">How it works?</a></li>
+        <li><a href="">Meeting tools</a></li>
+        <li><a href="">Live streaming</a></li>
+        <li><a href="">Contact method</a></li>
+    </ul>
+    <ul id="about">
+        <li>ABOUT US</li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Features</a></li>
+        <li><a href="">Privacy police</a></li>
+        <li><a href="">Terms & Conditions</a></li>
+    </ul>
+    <ul id="support">
+        <li>SUPPORT</li>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">Contact us</a></li>
+        <li><a href="">Live chat</a></li>
+        <li><a href="">Phone call</a></li>
+    </ul>
+    <ul id="enjoy">
+        <li>RNJOY YOUR LIFE</li>
+        <li>Great web UI kit for designers,freelancers or business</li>
+        <div id="buttonwrap">
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+    </ul>
+</footer>
 </body>
 </html>
