@@ -1,0 +1,425 @@
+*{
+    padding: 0;
+    margin:0;  /*不是body、html标签初始化样式，二是用*标签，不然body上外边距取消不了*/
+}
+body{
+    width: 100%;
+    height:100%;
+}
+header{
+
+    background-image: url("images/background-img1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    width:100%;
+    height:1000px;
+    color:white;
+    position:relative;
+}
+
+header h1{
+    padding-top: 10%;
+    margin-left: 35%;
+    font-size: 5em;
+}
+
+header p{
+    display: block;
+    width:40%;
+    margin-top: 3%;
+    margin-left: 28%;
+    font-size:1.25em;
+    overflow: hidden;
+    color: rgba(255, 252, 252, 0.5);
+    text-align: center;
+}
+
+header #register{
+   display: block;
+    border:0.0625em solid rgba(255, 252, 252, 0.25);
+    width: 50%;
+    height:25%;
+    float:left;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+header #register h2{
+    font-weight: normal;
+    margin-top: 5%;
+}
+header #register p{
+    margin-top: 3%;
+    color: rgba(255, 252, 252, 0.5);
+}
+header #register #account,#pw{
+    width: 30%;
+    height:20%;
+    margin-top: 3%;
+    font-size: 1em;      /*输入框需要设置背景颜色透明才能显示外层背景颜色，transparent*/
+    background-color: transparent;
+    border:0.0625em solid rgba(255, 252, 252, 0.25);
+
+}
+header #register #account{
+    color:rgba(255, 252, 252, 1);
+}
+header #register #pw{
+    margin-left: 3%;
+    color:rgba(255, 252, 252, 0.25);
+}
+
+header #register #submit{
+    margin-left: 5%;
+    width:15%;
+    height:20%;
+    padding:0;
+    background-color:rgba(255, 252, 252, 1);
+    border-radius: 3px;
+}
+/**
+header部分设置完毕，接下来是section1
+ */
+#feature{
+    height:800px;
+    background-color: white;
+}
+
+#feature>p{
+    display:block;
+    text-align: center;
+    margin-top: 3%;
+}
+#feature>h1{
+    display:block;
+    width:50%;
+    text-align:center;
+    margin-left: 25%;
+    font-weight: lighter;
+    margin-top:1%;
+    font-size: 3em;
+}
+#feature #characterwrap{
+    height:80%;
+    display:flex;
+    flex-flow: row wrap;
+    margin-top: 5%;
+}
+#feature #characterwrap #mobile,#accessibility,#fluid,#customization{
+    width:40%;
+    height:50%;
+
+
+}
+
+#feature #characterwrap img{
+  align-self: flex-start;
+    display:inline-block;
+    margin-left: 50%;
+    margin-top: 3%;
+    height:20%;
+    float:left;
+}
+#feature #characterwrap h2{
+    margin-left: 63%;
+    display: block;
+    font-weight: lighter;
+}
+#feature #characterwrap p{
+    width:50%;
+    float:left;               /*如果单是设置图片float，图片会脱离文档流布局上，段落的范围会穿过图片，但是文字会被图片所阻挡。如果将文字段落也设置为float，则段落范围也被图片所阻挡 */
+    margin-left: 63%;
+    color: rgba(24, 17, 17,0.5);
+    font-size: 1.1em;
+}
+
+/*background2板块*/
+#background2{
+    height:800px;
+    background-image: url("images/background-img2.png");
+    background-size: 100% 100%;         /*要想背景图片自适应高度宽度，必须bg-size 100% 100%*/
+}
+
+#background2 #bg2wrap{
+    margin-left: 15%;
+    height:100%;
+}
+#background2 #bg2wrap h1{
+    width:28%;
+    font-weight:lighter;
+    font-size: 3em;
+    color:rgba(255, 252, 252, 1);
+   float:left;
+    margin-top: 10%
+}
+#background2 #bg2wrap p{
+    width:24%;
+    color:rgba(255, 252, 252, 0.5);
+    font-size: 1.2em;
+    padding-top: 20%;                         /*p标签段落是个特例，margin相对于父元素的前兄弟元素，padding相对于父元素,p标签从样式上看应该并无盒子模型*/
+}
+#background2 #bg2wrap .button{    /*子元素百分比高度只依靠于直接父元素，不会像作用域一样延伸到全局*/
+    width: 15%;
+    height:8%;                      /*margin、padding百分比是相对于父元素宽度进行计算的*/
+    margin-top: 5%;
+    background-color:rgba(255, 252, 252, 1);
+}
+#background2 #bg2wrap #try{
+    margin-left: 2%;
+    background-color: transparent;
+    color:rgba(255, 252, 252, 1);
+    border:1px solid rgba(255, 252, 252, 0.5);
+}
+
+/*section product 部分css*/
+#product {
+    height:500px;
+}
+#product>h1{
+    padding-top:3%;                                            /*经过测试h1标题标签也属于文字，无盒子模型*/
+    text-align: center;
+    font-weight: lighter;
+    font-size: 2.5em;
+}
+
+#product #flexbox{
+    display:flex;
+    width:58%;
+    margin:0 auto;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+    margin-top: 6%;
+}
+
+#product #flexbox img{
+    margin-left:30%;
+}
+
+#product #flexbox div{
+   margin-left: 6%;
+}
+#product #flexbox div article{
+    margin-top: 5%;
+}
+#product #flexbox div p{
+    text-align: center;               /*使段落两端对齐使用justify*/
+    color: rgba(24, 17, 17,0.5);
+    font-size: 1.12em;
+}
+#repeat{
+    height:1100px;
+
+}
+#repeat #wrapper {
+    position:relative;
+    width:80%;
+    margin:0 auto;
+    height: 100%;
+}
+#repeat img{
+    margin-top: 8%;
+}
+#repeat .leaf_bird{
+    width:30%;
+   float: left;
+    margin-top:10%;
+    margin-left:10%;
+}
+#repeat #wrapper h1{
+    font-weight: lighter;
+}
+#repeat #wrapper p{
+    display:inline-block;
+    width:80% ;
+    margin-top: 8%;
+    color: rgba(24, 17, 17,0.5);
+    font-size: 1.2em;
+  line-height: 2em;
+
+}
+#repeat #leaf{
+    float:left;
+    margin-left:10%;
+}
+
+#repeat #bird{
+  float:right;
+    margin-top:10%;
+    margin-right: 15%;
+}
+
+#crew{
+    height:1000px;
+}
+
+#crew h1{
+    padding-top: 5%;
+    text-align: center;
+}
+
+#crew p{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1%;
+}
+
+#crew #imgwrap{
+    width:60%;
+    margin:1.5% auto 0 auto;
+}
+
+#crew #imgwrap img{
+    margin:1%;
+}
+
+#email{
+    height:800px;
+    position: relative;
+}
+
+#emailwrap{
+    border:1px solid  rgba(24, 17, 17,0.5);
+    width:25%;
+    height:70%;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+#emailwrap h1{
+    text-align: center;
+    padding-top: 5%;
+    font-weight: lighter;
+}
+
+#emailwrap #emailaddr,#subject{
+    display: block;
+    width: 70%;
+    height:10%;
+    margin: 10% auto 10% auto;
+}
+
+#emailwrap #message{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: 20%;
+}
+#emailwrap #sendbutton{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: 10%;
+    margin-top:5%;
+    background-color: black;
+    color:rgba(255, 252, 252, 1);
+    font-size: 1em;
+}
+#email #contact{;
+    width: 25%;
+    position: absolute;
+    left:55%;
+    top:5%;
+    height:70%;
+}
+#email #contact h1{
+    font-size: 3em;
+    font-weight: lighter;
+    margin-left: -6%;
+}
+#email #contact p{
+    width:63%;
+    display: block;
+    margin-top: 13%;
+    line-height: 1.5em;
+    margin-left: -6%;
+ color:rgba(24, 17, 17,0.5);
+}
+#email #contact ul li{
+    margin-top: 13%;
+}
+footer{
+    height:500px;
+    background-color: rgb(20,20,20);;
+
+}
+footer #flexwrap{
+    display:flex;
+    width:50%;
+    height: 70%;
+    margin-left: 20%;
+}
+footer #flexwrap ul{
+    flex:1;
+}
+footer li{
+    color:rgba(255, 252, 252, 0.5);
+    text-decoration: none;
+    margin-top: 10%;
+}
+
+footer #enjoy{
+    float:right;
+    margin-top: -13.3%;
+    margin-right:15%;
+}
+footer  ul {
+    list-style-type:none;
+}
+footer  h1{
+    color:rgba(255, 252, 252, 1);
+   font-size:1.3em;
+}
+footer #flexwrap h1{
+    padding-top: 30%;
+}
+
+footer a{
+    text-decoration: none;
+    color:rgba(255, 252, 252, 0.5);
+}
+footer #enjoy p{
+    display: block;
+    width:75%;
+}
+footer button{
+    width:30px;
+    height:30px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border:1px solid rgb(20,20,20);
+}
+footer #twitter{
+    background-image: url("images/twitter.png");
+}
+footer #facebook{
+    background-image: url("images/facebook.png");
+}
+footer #google{
+    background-image: url("images/google.png");
+}
+footer #tumbler{
+    background-image: url("images/tumbler.png");
+}
+footer #pinterest{
+    background-image: url("images/pinterest.png");
+}
+footer #linkedin{
+    background-image: url("images/linkedin.png");
+}
+footer #buttonwrap{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    width:60%;
+}
+
+
+
+hr{                               /*hr背景色设置常用方法，高度设为1像素，无边框背景色为想设置的hr颜色*/
+    height:1px;
+    border:none;
+    background-color: rgba(24, 17, 17,0.2);
+}
