@@ -1,0 +1,180 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 微软雅黑;
+}
+
+html{
+    height:100%;
+}
+
+body{
+    height:100%;
+
+}
+
+#sidebar1{
+    height:100%;
+    width:70px;
+    float:left;
+    background-color: rgb(29,37,49);
+}
+
+#bar2{
+    width:300px;
+    height:100%;
+    float:left;
+    background-color: rgb(34,44,60);
+}
+
+#content{
+    width:-webkit-calc(100% - 370px);
+    width:-moz-calc(100% - 370px);              /*在这里学到一个新东西，calc用来动态计算长宽度，进行百分比和数值的运算*/
+    width:calc(100% - 370px);
+    height:100%;
+    float:left;
+    overflow: auto;
+}
+
+#sidebar1 #more{
+    position: absolute;
+    left:10px;
+    bottom:5px;
+}
+#sidebar1 #setting1{
+    position:absolute;
+   left:45px;
+    bottom:5px;
+}
+.clearfix{
+    content:'';
+    display: table;
+    clear: both;
+}
+
+/*bar1初步设置完毕，接下来是bar2*/
+#bar2 #bar2wrap{
+    margin-left: 50px;
+}
+
+#bar2 *{
+    margin-top: calc(3% + 7px);
+}
+#bar2 h2{
+    font-size: 0.8em;
+    font-weight: lighter;
+}
+#bar2 h2 a{
+    text-decoration: none;
+    color:rgb(183,192,205);
+
+}
+
+#bar2 .part2{
+   padding-bottom: 3.2%;
+    margin-left: 13%;
+}
+#bar2 h1{
+    color:rgb(91,103,121);
+    font-weight: lighter;
+    font-size: 0.9em;
+}
+#bar2 h1 a{
+    color:rgb(91,103,121);
+    text-decoration: none;
+}
+
+#bar2 .uncheck{
+    width:30px;
+    height:20px;
+    color:rgb(255,255,255);
+    text-align: center;
+    border-radius: 15px;
+    border:1px solid rgb(36,154,243);
+    background-color:rgb(36,154,243) ;
+    float:right;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+#bar2 #unlock1{
+   margin-top:-55px;
+    margin-right:50px;
+}
+#bar2 #unlock2{
+    margin-right:50px;
+    margin-top:-20px;
+}
+#bar2 .divideline{
+    width:200px;
+    height:1px;
+    background-color: rgb(42,53,71);
+    margin-left: auto;
+}
+#bar2 #message{
+    color:rgb(255,255,255);
+}
+#bar2 .setting2{
+    float: right;
+    margin-right: 50px;
+    margin-top:-20px;
+}
+#bar2 #books,#tutorials,#stocks,#infographics{
+    display: block;
+    float:left;
+    margin-left: 0;
+}
+
+#bar2 #monthlygoal{
+     position:absolute;
+     bottom:20px;
+     left:120px;
+     color:rgb(255,255,255);
+     font-size: 0.8em;
+ }
+
+
+#bar2 #dollar{
+    position:absolute;
+    bottom:20px;
+    left:250px;
+    color:rgb(255,255,255);
+    font-size: 0.8em;
+}
+#bar2 #barchar{
+    width:200px;
+    height:3px;
+    background-color:rgb(91,103,121);
+    border-radius: 1px;
+    position: absolute;
+    bottom:10px;
+    left:120px;
+}
+#bar2 #barchar #color{
+    width:50px;
+    height:3px;
+    margin-top:0;
+    background:-moz-linear-gradient(left,rgb(128,93,230),rgb(155,140,227));  /*firefox里边  渐变方向为left就是从左往右和菜鸟教程上说的不一样*/
+     background:-webkit-linear-gradient(left,rgb(128,93,230),rgb(155,140,227));  /*chorme里面也是这样,经过设置为黑白色测试，渐变规律为第一个方向代表了从那个方向开始渲染，第一个颜色为开头颜色，第二个为结尾颜色，菜鸟教程出错了，问题已提交*/
+    background:linear-gradient(right,rgb(155,140,227),rgb(128,93,230));    /*设置进度条渐变颜色*/
+    margin-left: 0;
+}
+
+#bar2 #warn{
+    width:20px;
+    height:20px;
+    border-radius: 15px;
+    background:-moz-linear-gradient(bottom,rgb(207,42,14),rgb(242,81,54));
+    background:-webkit-linear-gradient(bottom,rgb(207,42,14),rgb(242,81,54));
+    background:linear-gradient(bottom,rgb(207,42,14),rgb(242,81,54));
+    border:1px solid rgb(220,57,29);
+    text-align: center;
+    color: rgb(255,255,255);
+    font-size: 0.8em;
+    float: right;
+    margin-top: -20px;
+    margin-right: 50px;
+}
+#content #character{
+    width: 100%;
+    height:10%;
+}
