@@ -1,3 +1,4 @@
+
 *{
     padding:0;
     margin:0;
@@ -34,6 +35,7 @@ body{
     height:100%;
     float:left;
     overflow: auto;
+    position:relative;
 }
 
 #sidebar1 #more{
@@ -163,7 +165,7 @@ body{
     width:20px;
     height:20px;
     border-radius: 15px;
-    background:-moz-linear-gradient(bottom,rgb(207,42,14),rgb(242,81,54));
+    background:-moz-linear-gradient(bottom,rgb(207,42,14),rgb(242,81,54));   /*用渐变色底部深色，头部浅色更有立体感*/
     background:-webkit-linear-gradient(bottom,rgb(207,42,14),rgb(242,81,54));
     background:linear-gradient(bottom,rgb(207,42,14),rgb(242,81,54));
     border:1px solid rgb(220,57,29);
@@ -176,5 +178,293 @@ body{
 }
 #content #character{
     width: 100%;
-    height:10%;
+    height:100px;
+}
+
+#content h1{
+    font-weight: lighter;
+    display:block;
+    float:left;
+    padding-left: 30px;
+    margin-top: 30px;
+
+}
+#content #character ul{
+    float:right;
+    font-size:2em;
+    list-style-type: none;
+    position:absolute;
+    top:30px;
+    right:30px;
+}
+#content #character ul li a{
+    text-decoration: none;
+    color: rgb(164, 164, 164);
+}
+
+#content #character #personality{
+    float:right;
+    margin-top:20px;
+    margin-right: 90px;
+    width: 200px;
+    height:80px;
+}
+/*#content #character #personality:after{*/
+    /*display:table;*/
+    /*content:"";*/
+    /*clear:both;*/
+/*}*/
+#content #character #personality img{
+    display: block;
+    float:left;
+
+}
+#content #character #personality h2{
+    font-weight: bold;
+    font-size: 1em;
+    color:rgb(35,153,241);
+    float:left;
+   margin-left: 30px;
+    margin-top:10px;
+}
+#content #character #personality p{
+    color:rgb(181,181,181);
+    float:left;
+    margin-left:30px;
+
+}
+#maincontent{
+    display: flex;
+    height:100%;
+}
+#maincontent #left{
+    flex:3;
+    height:100%;
+    position:relative;
+    /*overflow: scroll;*/
+}
+#maincontent #right{
+
+    float:left;
+    flex:7;
+    height:100%;
+    margin-left:0;
+    display: flex;
+    flex-wrap: wrap;
+}
+#maincontent #left #search .search_btn{
+    background-image: url("images/search.png");
+    display: inline-block;
+    float:left;
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat;
+    position:absolute;
+    left:83%;
+    top:25px;
+    z-index: 999; /*设置显示优先级*/
+}
+#maincontent #left #search .search_btn:hover{
+    background-position: 0 2px;
+}
+#maincontent #left #search{
+    border-bottom:1px solid rgb(217,221,227);
+     height:80px;
+    position:relative;
+ }
+#maincontent #left #search input{
+    width:80%;
+    height:50%;
+    position:absolute;
+    left:10%;
+    top:20%;
+}
+#content hr{
+    height:1px;
+    border:none;
+    background-color:rgb(217,221,227);
+}
+#maincontent #left .border{
+    border-bottom:1px solid rgb(217,221,227);
+   height:150px;
+}
+#maincontent #left .border img{
+    float:left;
+    margin-left: 20px;
+}
+#maincontent #left .border h2{
+    font-size: 1em;
+    margin-left:90px;
+
+}
+#maincontent #left .border h3{
+    float:right;
+    padding-right: 20px;
+    font-weight: normal;
+    font-size: 0.9em;
+    color:rgb(138,152,171);
+}
+#maincontent #left .border .tool{
+    font-size: 0.9em;
+    color:rgb(181,181,181);
+    padding-left: 10px;
+    margin-left: 80px;
+}
+#maincontent #left .border .tool + p{
+    font-size: 0.9em;
+    font-weight: lighter;
+    color:rgb(88,93,104);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+#maincontent #left #material #p1 #person1 #uncheck2{
+    width:20px;
+    height:20px;
+    color:rgb(255,255,255);
+    text-align: center;
+    border-radius: 20px;
+    border:1px solid rgb(36,154,243);
+    background-color:rgb(36,154,243) ;
+    float:right;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top:-50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#maincontent #right #personstatus{
+    border-left:1px solid rgb(217,221,227);
+    border-bottom: 1px solid rgb(217,221,227);
+    height:80px;
+    width:100%;
+    position:relative;
+}
+#maincontent #right #personstatus h1{
+    font-size:1.2em;
+    font-weight: lighter;
+    margin-top: 2%
+}
+
+#maincontent #right #personstatus #online{
+    width:10px;
+    height:10px;
+    border-radius: 10px;
+    background-color: #23be23;
+    margin-top: 3%;
+    margin-left: 2%;
+    float:left;
+}
+#maincontent #right .border{
+    border-bottom: 1px solid rgb(217,221,227);
+    border-left:1px solid rgb(217,221,227);
+    line-height:1.5em;
+}
+#maincontent #right #r2,#r3{
+    position: relative;
+}
+#maincontent #right #r1{
+    margin-top: 0;
+    min-height: 430px;
+}
+
+#maincontent #right #r2{
+    min-height: 450px;
+}
+#maincontent #right #divideline2{
+    width:100px;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 1em;
+    color:rgb(167,177,191);
+    position:absolute;
+    left:45%;
+    top:-3%;
+    background-color: white;
+}
+#maincontent #right #divideline3{
+    width:150px;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 1em;
+    color:rgb(167,177,191);
+    position:absolute;
+    left:45%;
+    top:-10%;
+    background-color: white;
+}
+#maincontent #right #personstatus #imgwrap{
+    width:15%;
+    position:absolute;
+    top:22%;
+    right:20%;
+}
+#maincontent #right #personstatus #imgwrap *{
+    float:left;    /*消除连续图片间的空格，还可以采用设置父元素的font-size为0，换行符所致。*/
+}
+#maincontent #right #personstatus #move_back {
+    width:10%;
+    float:right;
+    margin-top: 1.9%;
+}
+#maincontent #right #personstatus #move_back *{
+    float:left;
+}
+#maincontent #right #personstatus h2{
+    font-weight: lighter;
+    font-size: 0.8em;
+    position:absolute;
+    top:35%;
+    right:13%
+}
+#maincontent #right article img{
+    float:left;
+    margin-left: 3%;
+}
+#maincontent #right article h1{
+    font-size: 1em;
+    font-weight: bold;
+    margin-top:0;
+    padding-left: 2%;
+}
+#maincontent #right article h2{
+    float:left;
+    font-size: 0.9em;
+    font-weight: lighter;
+    color:rgb(127,143,164);
+    padding-left: 1%;
+}
+#maincontent #right article .p1send{
+    margin-top: 3%;
+}
+
+#maincontent #right article .p1get{
+    margin-top: 3%;
+}
+#maincontent #right article .p1get .imgwrap2{
+    margin-left:7%;
+    margin-top: 2%;
+}
+#maincontent #right article p{
+    width:80%;
+    display: block;
+    padding-top: 4%;
+    padding-left: 10%;
+    color:rgb(88,93,104);
+    font-size: 0.9em;
+}
+#maincontent #right #r3 button{
+    width:50px;
+    height:50px;
+    font-size: 2em;
+    font-weight: lighter;
+    float:left;
+   margin-left: 5%;
+    color: rgb(160, 164, 168);
+}
+#maincontent #right #r3 input{
+    box-sizing: border-box;
+    height:50px;
+    width:80%;
+    color: rgb(160, 164, 168);
 }
