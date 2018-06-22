@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        #sprite{
+            width:480px;  /*从ps测量所得*/
+            height:480px;
+            background-image: url("http://ife.baidu.com/2016/static/img/erik_ce204002.jpg");
+            background-position: 0 0;
+        }
+    </style>
 </head>
 <body>
-
+<div id="sprite"></div>
+<script>
+    var sprite=document.querySelectorAll("#sprite")[0];
+    var i=0;
+    var position=sprite.style.backgroundPositionY;
+    function smile()
+    {
+        sprite.style.backgroundPositionY=position+480*i+"px";   /*position每次调用通过作用域链向外部查询position大小*/
+        i++;
+        console.log(sprite.style.backgroundPositionY);
+    }
+    setInterval(smile,100);
+</script>
 </body>
 </html>
