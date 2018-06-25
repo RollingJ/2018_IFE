@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+<div id="sidebar1">
+
+    <input type="image" src="images/paperplane.png" alt="paperplane" id="paperplane">
+    <input type="image" src="images/rocket.png" alt="rocket" id="rocket">
+    <input type="image" src="images/entertain.png" alt="entertain" id="entertain">
+    <input type="image" src="images/plus.png" alt="plus" id="plus">
+    <input type="image" src="images/more.png" alt="more" id="more">
+    <input type="image" src="images/setting.png" alt="setting1" id="setting1">
+
+</div>
+<section id="bar2">
+    <div id="bar2wrap">
+    <h1><a href="">菜单</a></h1>
+    <input type="image" src="images/setting.png" alt="setting2" class="setting2" >
+    <h2><a href="">主页</a></h2>
+    <h2><a href="">跳蚤市场</a></h2>
+    <h2><a href="">我的好友</a></h2>
+    <h2><a href="">分析和目标</a></h2>
+    <h2><a href="">通知</a></h2>
+<div class="divideline"></div>
+    <h1>您的资料</h1>
+    <input type="image"   src="images/setting.png" alt="settig2" class="setting2">
+    <img src="images/book.png" alt="books" id="books">
+    <h2 class="part2"><a href="">小说</a></h2>
+    <img src="images/tutorials.png" alt="tutorials" id="tutorials">
+    <h2 class="part2"><a href="">视频</a></h2>
+    <img src="images/stocks.png" alt="stocks" id="stocks">
+    <h2 class="part2"><a href="">相册</a></h2>
+    <img src="images/infographics.png" alt="infographics" id="infographics">
+    <h2 class="part2"><a href="">访客记录</a></h2>
+    <div class="divideline"></div>
+    <h1>设置</h1>
+    <img src="images/setting.png" alt="setting2" class="setting2">
+    <h2><a href="" id="message">新消息</a></h2>
+    <h2><a href="">朋友圈</a></h2>
+    <h2><a href="">联系客服</a></h2>
+    <h2><a href="">账户余额</a></h2>
+    <h2><a href="">系统设置</a></h2>
+    <div id="monthlygoal">Monthly Goals</div>
+    <div id="dollar">$580/$3200</div>
+    <div id="barchar"><div id="color"></div></div>
+    </div> 
+     <canvas id="canvas" width="900" height="500"></canvas>
+</section>
+  
+<h1 text="Meteor">Meteor</h1>
+ <h2>流星不如你</h2>
+    <div id="register">
+        <img src="images/meteor.jpg" alt="meteor">
+        <div id="input">
+            <form name="form" action="communicate.html" method="post" onsubmit="return check(this.form)">    <!--如果不采用php进行表单和数据库验证，只用JS的话要在form上添加onsubmit=“一个函数”。返回值为true，form能成功提交。返回值为false，form不能提交即跳转至action页面-->
+                <input type="text" placeholder="请输入账号" class="input" id="input1" name="account" value="">
+                <input type="password" placeholder="密码" class="input" id="input2" name="password" value="">
+                <label id="rem"><input type="checkbox" name="remember" >记住密码</label>
+                <label id="forget"><input type="checkbox" name="自动登录" >自动登录</label>
+                <input type="submit" value="立即登录" id="button" >
+            </form>
+            <a href="" id="a1">注册账号</a>
+            <a href="" id="a2">找回密码</a>
+        </div>
+    </div>
+
+
+<script src="jQuery%203.3.1.js"></script>
+<script src="index.js"></script>
+<script src="layout2.js"></script>
+</body>
+</html>
